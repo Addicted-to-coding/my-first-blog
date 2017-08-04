@@ -25,7 +25,7 @@ SECRET_KEY = '#^!d2r(*u=n(bm%cvwvx(!0084)0fk+g1-wqsog=a+91@!*0k3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '<addictedtocoding.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'addictedtocoding.pythonanywhere.com']
 
 
 
