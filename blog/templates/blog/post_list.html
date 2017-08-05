@@ -3,20 +3,16 @@
         <title>Django Girls blog</title>
     </head>
     <body>
-        <div>
-            <h1><a href="">Django Girls Blog</a></h1>
-        </div>
+       <div>
+         <h1><a href="/">Django Girls Blog</a></h1>
+       </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Heloooo people!! This is so damn freakin fun!! I am having the time of my life. I feel like yelling lalalalalaal</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>But as pa says, don't jump too much.. it only harms you.. there is no point in getting too happy on seeing this, you already did all this in like 7th grade!! :) You are meant for bigger things in life.</p>
-        </div>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
     </body>
 </html>
